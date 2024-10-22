@@ -43,7 +43,7 @@ export default function MultipleSelectPlaceholder(props) {
     return (
         <div>
             <FormControl sx={{
-                width: 240,
+                width: 230,
                 height: 56,
                 textAlign: "left",
             }}>

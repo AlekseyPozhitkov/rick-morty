@@ -4,6 +4,10 @@
     padding: 0;
 }
 
+html {
+    background: gray;
+}
+
 a {
     text-decoration: none;
     color: inherit;
@@ -11,7 +15,9 @@ a {
 
 body {
     margin: 0 auto;
-    width: 1400px;
+    max-width: 1400px;
+    background: #fff;
+    height: 150vh;
 }
 
 .characters {
@@ -42,5 +48,4 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    gap: 20px;
 }
