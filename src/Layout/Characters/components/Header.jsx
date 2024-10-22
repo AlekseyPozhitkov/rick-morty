@@ -7,7 +7,7 @@ const Header = () => {
             <div className="header__item">
                 <img src={logo} alt="" />
             </div>
-            <div className="header__item">
+            <div className="header__item karla-nav">
                 <a href="#">Characters</a>
                 <a href="#">Locations</a>
                 <a href="#">Episodes</a>
