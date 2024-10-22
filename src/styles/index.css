@@ -9,18 +9,38 @@ a {
     color: inherit;
 }
 
-.header {
+body {
     margin: 0 auto;
     width: 1400px;
+}
+
+.characters {
+    text-align: center;
+}
+
+/* header */
+
+.header {
     height: 60px;
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 5px 210px;
     box-shadow: 0 0 10px 2px rgba(0, 0, 0, 0.1);
+    margin-bottom: 26px;
 }
 
 .header__item {
     display: flex;
     gap: 24px;
+}
+
+/* sort */
+
+.sort {
+    margin: 16px 210px 61px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
 }

@@ -1,5 +1,5 @@
 import React from "react";
-import "./css/index.css"
+import "./styles/index.css"
 import Characters from "./Layout/Characters/Characters";
 
 function App() {

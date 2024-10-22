@@ -1,18 +1,18 @@
 import React from 'react'
-import logo from './logo-black 1.svg';
+import logo from '../../../public/logo-black 1.svg'
 
 const Header = () => {
     return (
-        <div className="header">
+        <header className="header">
             <div className="header__item">
-                <img src={logo} alt="" />
+                <img src={logo} alt="rick&morty" />
             </div>
-            <div className="header__item">
+            <nav className="header__item">
                 <a href="#">Characters</a>
                 <a href="#">Locations</a>
                 <a href="#">Episodes</a>
-            </div>
-        </div>
+            </nav>
+        </header>
     )
 }
 
