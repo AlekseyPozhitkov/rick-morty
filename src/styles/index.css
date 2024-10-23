@@ -77,7 +77,16 @@ body {
   }
 
   .image_hero {
-    width: 50%;
+    width: 60%;
+  }
+}
+
+@media (max-width: 1020px) {
+  .header,
+  .sort,
+  .cards {
+    padding: 5px 10%;
+    justify-content: space-between;
   }
 }
 
@@ -85,7 +94,7 @@ body {
   .header,
   .sort,
   .cards {
-    padding: 0 5%;
+    padding: 5px 5%;
     justify-content: center;
   }
 
