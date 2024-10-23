@@ -97,7 +97,9 @@ body {
     padding: 5px 5%;
     justify-content: center;
   }
+}
 
+@media (max-width: 400px) {
   .image_hero {
     width: 230px;
   }
