@@ -1,22 +1,27 @@
-import React, { useEffect, useState } from 'react'
-import axios from "axios"
-import MediaCard from './MediaCard'
+import React, { useEffect, useState } from "react";
+import MediaCard from "./MediaCard";
+import axios from "axios";
+
+const baseUrl = "https://rickandmortyapi.com/api/character";
 
 const Cards = () => {
+  const [cards, setCards] = useState([]);
 
-    const [labels, setLabels] = useState([])
+  useEffect(() => {
+    axios.get(baseUrl)
+      .then((res) => {
+      setCards(res.data.results);
+      console.log(res.data.results);
+    });
+  }, []);
 
-    useEffect(() => {
-        axios
-    })
+  return (
+    <div className="cards">
+      {cards.map((card) => (
+        <MediaCard name={card.name} species={card.species} key={card.name} image={card.image} />
+      ))}
+    </div>
+  );
+};
 
-
-    return (
-        <div className="cards">
-
-            <MediaCard />
-        </div>
-    )
-}
-
-export default Cards
+export default Cards;
